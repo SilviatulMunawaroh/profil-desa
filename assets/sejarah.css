@@ -1,0 +1,43 @@
+.navbar-nav {
+    margin-left: -15px; /* Adjust this value as needed */
+}
+
+#navbarNav {
+    margin-right: auto;
+}
+
+/* Custom CSS untuk animasi fade-in */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Gaya untuk hero image */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.hero h2 {
+    position: relative;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    z-index: 10;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Desa Sumberrejo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        #map {
+            height: 400px; /* Atur tinggi peta sesuai kebutuhan */
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="../index.html" style="color: white;">
+            <img src="../assets/img/logo.png" alt="Logo" width="30"> Desa Sumberrejo
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" style="color: white;">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profilDesaDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                        Profil Desa
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profilDesaDropdown1">
+                        <a class="dropdown-item" href="visi.html">Visi & Misi</a>
+                        <a class="dropdown-item" href="sejarah.html">Sejarah Desa</a>
+                        <a class="dropdown-item" href="geografis.html">Geografis Desa</a>
+                        <a class="dropdown-item" href="demografi.html">Demografi Desa</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profilDesaDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                        Pemerintahan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profilDesaDropdown2">
+                        <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                        <a class="dropdown-item" href="#">Perangkat Desa</a>
+                        <a class="dropdown-item" href="#">Lembaga Desa</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profilDesaDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                        Informasi Publik
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profilDesaDropdown3">
+                        <a class="dropdown-item" href="#">Berita Desa</a>
+                        <a class="dropdown-item" href="#">Pengumuman</a>
+                        <a class="dropdown-item" href="#">Agenda Kegiatan</a>
+                        <a class="dropdown-item" href="#">Galeri</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profilDesaDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                        Layanan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profilDesaDropdown4">
+                        <a class="dropdown-item" href="#">Layanan 1</a>
+                        <a class="dropdown-item" href="#">Layanan 2</a>
+                        <a class="dropdown-item" href="#">Layanan 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: white;">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container mt-4">
+        <div class="info">
+            <h2>Geografis Desa Sumberrejo, Paiton, Probolinggo</h2>
+            <p><strong>Kode Pos:</strong> 67282</p>
+            <p><strong>Koordinat Geografis:</strong> Latitude: -7.774845, Longitude: 113.216706</p>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <footer class="bg-primary text-white text-center text-lg-start mt-4">
+        <div class="text-center p-3">
+            © 2024 Desa Sumberrejo
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        function initMap() {
+            // Koordinat lokasi dari Google Maps
+            const location = { lat: -7.774845, lng: 113.216706 };
+
+            // Membuat peta
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: location,
+                zoom: 15
+            });
+
+            // Menambahkan marker di peta
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Desa Sumberrejo, Paiton - Probolinggo"
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

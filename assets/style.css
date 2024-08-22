@@ -1,0 +1,83 @@
+
+.navbar-nav {
+    margin-left: -15px; /* Adjust this value as needed */
+}
+
+#navbarNav {
+    margin-right: auto;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/kantor_desa.jpg') no-repeat center center;
+    background-size: cover;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* CSS untuk animasi */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Tambahkan gaya kustom lainnya di sini */
