@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,12 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Profil Desa Sumberrejo</title>
     <style>
-        html, body {
+        body {
             height: 100%;
             margin: 0;
-        }
-
-        body {
             display: flex;
             flex-direction: column;
         }
@@ -56,6 +54,79 @@
         .background-page {
             background-color: #031634;
         }
+
+        .org-chart {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .org-member {
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        .org-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .org-member h5 {
+            margin: 0;
+            color: #fafafa;
+        }
+
+        /* Garis penghubung vertikal */
+        .org-line-vertical {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 40px;
+            background-color: #fafafa;
+        }
+
+        /* Garis penghubung horizontal */
+        .org-line-horizontal {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fafafa;
+        }
+
+        /* Garis di atas yang menghubungkan ke Sekretaris dan Bendahara */
+        .org-line-horizontal-top {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fafafa;
+        }
+
+        /* Container untuk anggota yang sejajar */
+        .org-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        h5 {
+            color: #fafafa;
+        }
+
+        @media (max-width: 767.98px) {
+            .org-member img {
+                width: 100px;
+                height: 100px;
+            }
+        }
     </style>
 </head>
 
@@ -74,7 +145,7 @@
             <div class="row align-items-center">
                 <div class="col-6 col-xl-2 d-flex justify-content-center align-items-center">
                     <img src="../assets/img/logo.png" class="img-fluid mr-2" width="30" alt="logo">
-                    <h1 class="mb-0 site-logo fw-bold "><a href="index.html">Desa Sumberrejo</a></h1>
+                    <h1 class="mb-0 site-logo fw-bold "><a href="../index.html">Desa Sumberrejo</a></h1>
                 </div>
                 <div class="col-12 col-md-10 d-none d-xl-block">
                     <nav class="site-navigation position-relative text-right" role="navigation">
@@ -100,10 +171,10 @@
                             <li class="has-children">
                                 <a href="#about-section" class="nav-link fw-bold">Informasi Publik</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/berita.html" class="nav-link">Berita</a></li>
-                                    <li><a href="html/pengumuman.html" class="nav-link">Pengumuman</a></li>
-                                    <li><a href="html/agenda.html" class="nav-link">Agenda Kegiatan</a></li>
-                                    <li><a href="html/galeri.html" class="nav-link">Gallery</a></li>
+                                    <li><a href="berita.html" class="nav-link">Berita</a></li>
+                                    <li><a href="pengumuman.html" class="nav-link">Pengumuman</a></li>
+                                    <li><a href="agenda.html" class="nav-link">Agenda Kegiatan</a></li>
+                                    <li><a href="galeri.html" class="nav-link">Gallery</a></li>
                                 </ul>
                             </li>
                             <li class="has-children">
@@ -117,90 +188,90 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
-                        href="#" class="site-menu-toggle js-menu-toggle float-right"><span
-                            class="icon-menu h3"></span></a></div>
+                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
+                    <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="background-page text-center py-5">
-        <div class="container pb-5 pt-5" >
-            <section class="py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <h2 class="display-5 fw-bold text-white">Lokasi Geografis:</h2>
-                            <p class="lead">Desa Sumberrejo terletak di Kecamatan Paiton, Kabupaten Probolinggo, dengan luas wilayah sebesar 363,7 hektar. Desa ini berbatasan dengan Selat Madura di sebelah utara, Desa Bhinor Kecamatan Paiton dan Desa Kotaanyar Kecamatan Kotaanyar di sebelah timur, Desa Kotaanyar Kecamatan Kotaanyar di sebelah selatan, serta Desa Sumberanyar Kecamatan Paiton di sebelah barat. Lokasi geografis ini memberikan desa Sumberrejo akses strategis terhadap perairan serta memungkinkan interaksi dengan desa-desa tetangga di wilayah Kabupaten Probolinggo.</p>
-                        </div>
-                        <div class="col-md-6 offset-md-1 text-white">
-                            <ul>
-                                <li>Kecamatan: Paiton, Kabupaten Probolinggo</li>
-                                <li>Luas Wilayah: 363,7 Ha</li>
-                                <li>Batas Wilayah:
-                                    <ul>
-                                        <li>Utara: Selat Madura</li>
-                                        <li>Timur: Desa Binor, Kecamatan Paiton dan Desa Kotaanyar, Kecamatan Kotaanyar</li>
-                                        <li>Selatan: Desa Kotaanyar, Kecamatan Kotaanyar</li>
-                                        <li>Barat: Desa Sumberanyar, Kecamatan Paiton</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <main class="background-page org-chart mt-5">
+        <div class="container">
+            <!-- Kepala Desa -->
+            <div class="org-member">
+                <img src="../assets/img/user.png" alt="Kepala Desa">
+                <h5>Nama Kepala Desa</h5>
+                <p>Kepala Desa</p>
+            </div>
+
+            <!-- Sekretaris dan Bendahara -->
+            <div class="org-row">
+                <div class="org-member">
+                    <img src="../assets/img/user.png" alt="Sekretaris Desa">
+                    <h5>Nama Sekretaris Desa</h5>
+                    <p>Sekretaris Desa</p>
                 </div>
-            </section>
-            <section class="py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <h2 class="display-5 fw-bold text-white">Pembagian Wilayah:<h2>
-                            <p class="lead">Desa Sumberrejo terdiri dari empat dusun dengan struktur pembagian wilayah yang lebih lanjut dibagi menjadi beberapa Rukun Warga (RW) dan Rukun Tetangga (RT). Pembagian wilayah ini membantu dalam pengelolaan administratif dan pelayanan kepada masyarakat desa, serta mempermudah koordinasi dan pembangunan infrastruktur di masing-masing wilayah.</p>
-                        </div>
-                        <div class="col-md-6 offset-md-1 text-white">
-                            <ul>
-                                <li>Jumlah Dusun: 4 Dusun (Krajan, Kejawan, Matikan I, Matikan II)</li>
-                                <li>Rukun Warga (RW) dan Rukun Tetangga (RT):</li>
-                                    <ul>
-                                        <li>Dusun Krajan: 4 RW, 12 RT</li>
-                                        <li>Dusun Kejawan: 3 RW, 9 RT</li>
-                                        <li>Dusun Matikan I: 2 RW, 6 RT</li>
-                                        <li>Dusun Matikan II: 1 RW, 3 RT</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="org-member">
+                    <img src="../assets/img/user.png" alt="Bendahara Desa">
+                    <h5>Nama Bendahara Desa</h5>
+                    <p>Bendahara Desa</p>
                 </div>
-            </section>
+            </div>
+
+            <!-- Kaur -->
+            <div class="org-row">
+                <div class="org-member">
+                    <img src="../assets/img/user.png" alt="Kaur Pemerintahan">
+                    <h5>Nama Kaur Pemerintahan</h5>
+                    <p>Kaur Pemerintahan</p>
+                </div>
+                <div class="org-member">
+                    <img src="../assets/img/user.png" alt="Kaur Pembangunan">
+                    <h5>Nama Kaur Pembangunan</h5>
+                    <p>Kaur Pembangunan</p>
+                </div>
+                <div class="org-member">
+                    <img src="../assets/img/user.png" alt="Kaur Kesra">
+                    <h5>Nama Kaur Kesra</h5>
+                    <p>Kaur Kesra</p>
+                </div>
+                <div class="org-member">
+                    <img src="../assets/img/user.png" alt="Kaur Umum">
+                    <h5>Nama Kaur Umum</h5>
+                    <p>Kaur Umum</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </main>
 
     <footer class="py-4 bg-white">
         <div class="container">
             <div class="d-lg-flex justify-content-between py-3 py-lg-2">
                 <div class="small mb-2 mb-lg-0">
-                    <p class="text-black mb-0 me-5">© <span id="year"></span> DesaSumberrejo. All rights reserved.</p>
+                    <p class="text-black mb-0 me-5">© <span id="year"></span> Desa Sumberrejo. All rights reserved.</p>
                 </div>
                 <div class="d-flex small align-items-end justify-content-between">
                     <div>
-                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="">Terms</a> <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="">Cookies</a> <a class="d-block d-lg-inline text-black ms-lg-3" href="">Sitemap</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Privacy Policy</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Terms</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Cookies</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3" href="#">Sitemap</a>
                     </div>
                     <div class="d-none d-lg-block ms-3">
-                        <a class="me-2 text-black" href=""><i class="fa-brands fa-youtube"></i></a> 
-                        <a class="me-2 text-black" href=""><i class="fa-brands fa-whatsapp"></i></i></a>
-                        <a class="me-2" href=""></a>
+                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-youtube"></i></a> 
+                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                     <div class="d-lg-none">
-                        <a class="me-2" href=""><i class="fa-brands fa-youtube"></i></a> 
-                        <a class="me-2" href=""><i class="fi fi-brands-whatsapp"></i></a>
-                        <a class="me-2" href=""></a>
+                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-youtube"></i></a> 
+                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -211,5 +282,7 @@
         // JavaScript untuk memperbarui tahun secara otomatis
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    
 </body>
+
 </html>
