@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,6 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Profil Desa Sumberrejo</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #031634;
+        }
+
         body {
             display: flex;
             flex-direction: column;
@@ -47,10 +52,6 @@
 
         .social-icons a:last-child {
             margin-right: 0;
-        }
-
-        .background-page {
-            background-color: #031634;
         }
     </style>
 </head>
@@ -96,10 +97,10 @@
                             <li class="has-children">
                                 <a href="#about-section" class="nav-link fw-bold">Informasi Publik</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/berita.html" class="nav-link">Berita</a></li>
-                                    <li><a href="html/pengumuman.html" class="nav-link">Pengumuman</a></li>
-                                    <li><a href="html/agenda.html" class="nav-link">Agenda Kegiatan</a></li>
-                                    <li><a href="html/galeri.html" class="nav-link">Gallery</a></li>
+                                    <li><a href="berita.html" class="nav-link">Berita</a></li>
+                                    <li><a href="pengumuman.html" class="nav-link">Pengumuman</a></li>
+                                    <li><a href="agenda.html" class="nav-link">Agenda Kegiatan</a></li>
+                                    <li><a href="galeri.html" class="nav-link">Gallery</a></li>
                                 </ul>
                             </li>
                             <li class="has-children">
@@ -109,7 +110,7 @@
                                     <li><a href="kk.html" class="nav-link">Layanan Pembuatan KK</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html" class="nav-link fw-bold">Kontak</a></li>
+                            <li><a href="#contact" class="nav-link fw-bold">Kontak</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -120,103 +121,90 @@
         </div>
     </header>
 
-    <main>
-        <section class="background-page py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-4 mt-5 text-white">Lembaga Desa Sumberrejo</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <p class="text-center mb-5">
-                            Lembaga Desa Sumberrejo adalah bagian integral dari pemerintahan desa yang bertugas untuk
-                            membantu pelaksanaan tugas-tugas administratif dan kemasyarakatan. Berikut adalah beberapa lembaga desa yang ada di Desa Sumberrejo:
-                        </p>
-                    </div>
+    <section class="background-page py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4 mt-5 text-white">Lembaga Desa Sumberrejo</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center mb-5">
+                        Lembaga Desa Sumberrejo adalah bagian integral dari pemerintahan desa yang bertugas untuk
+                        membantu pelaksanaan tugas-tugas administratif dan kemasyarakatan. Berikut adalah beberapa lembaga desa yang ada di Desa Sumberrejo:
+                    </p>
                 </div>
-                <div class="row">
-                    <!-- Lembaga 1: Badan Permusyawaratan Desa (BPD) -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center border-0 shadow">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Badan Permusyawaratan Desa (BPD)</h5>
-                                <p class="card-text">BPD berfungsi sebagai badan legislatif desa yang bertugas untuk menampung dan menyalurkan aspirasi masyarakat serta mengawasi jalannya pemerintahan desa.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Lembaga 2: Lembaga Pemberdayaan Masyarakat Desa (LPMD) -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center border-0 shadow">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Lembaga Pemberdayaan Masyarakat Desa (LPMD)</h5>
-                                <p class="card-text">LPMD bertugas untuk merencanakan dan melaksanakan kegiatan pembangunan yang bersumber dari swadaya masyarakat, pemerintah, dan sumber lain.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Lembaga 3: Karang Taruna -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center border-0 shadow">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Karang Taruna</h5>
-                                <p class="card-text">Karang Taruna merupakan organisasi kepemudaan yang berfungsi sebagai wadah partisipasi pemuda dalam pembangunan desa.</p>
-                            </div>
+            </div>
+            <div class="row">
+                <!-- Lembaga 1: Badan Permusyawaratan Desa (BPD) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Badan Permusyawaratan Desa (BPD)</h5>
+                            <p class="card-text">BPD berfungsi sebagai badan legislatif desa yang bertugas untuk menampung dan menyalurkan aspirasi masyarakat serta mengawasi jalannya pemerintahan desa.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <!-- Lembaga 4: PKK -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center border-0 shadow">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">PKK</h5>
-                                <p class="card-text">PKK (Pemberdayaan Kesejahteraan Keluarga) merupakan organisasi yang berfokus pada pemberdayaan keluarga dalam berbagai aspek, termasuk kesehatan, pendidikan, dan ekonomi.</p>
-                            </div>
+                <!-- Lembaga 2: Lembaga Pemberdayaan Masyarakat Desa (LPMD) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Lembaga Pemberdayaan Masyarakat Desa (LPMD)</h5>
+                            <p class="card-text">LPMD bertugas untuk merencanakan dan melaksanakan kegiatan pembangunan yang bersumber dari swadaya masyarakat, pemerintah, dan sumber lain.</p>
                         </div>
                     </div>
-                    <!-- Lembaga 5: Posyandu -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center border-0 shadow">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Posyandu</h5>
-                                <p class="card-text">Posyandu adalah layanan kesehatan dasar yang diselenggarakan dari, oleh, dan untuk masyarakat desa, terutama dalam bidang kesehatan ibu dan anak.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Lembaga 6: Lembaga Adat -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center border-0 shadow">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Lembaga Adat</h5>
-                                <p class="card-text">Lembaga Adat berfungsi untuk menjaga dan melestarikan nilai-nilai adat dan budaya yang ada di Desa Sumberrejo.</p>
-                            </div>
+                </div>
+                <!-- Lembaga 3: Karang Taruna -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Karang Taruna</h5>
+                            <p class="card-text">Karang Taruna merupakan organisasi kepemudaan yang berfungsi sebagai wadah partisipasi pemuda dalam pembangunan desa.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    
+            <div class="row">
+                <!-- Lembaga 4: PKK -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">PKK</h5>
+                            <p class="card-text">PKK (Pemberdayaan Kesejahteraan Keluarga) merupakan organisasi yang berfokus pada pemberdayaan keluarga dalam berbagai aspek, termasuk kesehatan, pendidikan, dan ekonomi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lembaga 5: Posyandu -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Posyandu</h5>
+                            <p class="card-text">Posyandu adalah layanan kesehatan dasar yang diselenggarakan dari, oleh, dan untuk masyarakat desa, terutama dalam bidang kesehatan ibu dan anak.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lembaga 6: Lembaga Adat -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Lembaga Adat</h5>
+                            <p class="card-text">Lembaga Adat berfungsi untuk menjaga dan melestarikan nilai-nilai adat dan budaya yang ada di Desa Sumberrejo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="py-4 bg-white">
         <div class="container">
             <div class="d-lg-flex justify-content-between py-3 py-lg-2">
                 <div class="small mb-2 mb-lg-0">
-                    <p class="text-black mb-0 me-5">© <span id="year"></span> Desa Sumberrejo. All rights reserved.</p>
+                    <p class="text-black mb-0 me-5">© <span id="year"></span> DesaSumberrejo. All rights reserved.</p>
                 </div>
                 <div class="d-flex small align-items-end justify-content-between">
                     <div>
-                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Privacy Policy</a>
-                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Terms</a>
-                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Cookies</a>
-                        <a class="d-block d-lg-inline text-black ms-lg-3" href="#">Sitemap</a>
-                    </div>
-                    <div class="d-none d-lg-block ms-3">
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-youtube"></i></a> 
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                    <div class="d-lg-none">
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-youtube"></i></a> 
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0">Privacy Policy</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0">Terms</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" >Cookies</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3">Sitemap</a>
                     </div>
                 </div>
             </div>
@@ -234,5 +222,4 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
-
 </html>
