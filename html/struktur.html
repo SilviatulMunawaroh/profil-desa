@@ -14,15 +14,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Profil Desa Sumberrejo</title>
     <style>
-        body {
+        html, body {
             height: 100%;
             margin: 0;
+            background-color: #031634;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
         }
 
         main {
             flex: 1;
+        }
+
+        footer {
+            padding: 20px 0;
         }
 
         footer {
@@ -145,7 +153,7 @@
             <div class="row align-items-center">
                 <div class="col-6 col-xl-2 d-flex justify-content-center align-items-center">
                     <img src="../assets/img/logo.png" class="img-fluid mr-2" width="30" alt="logo">
-                    <h1 class="mb-0 site-logo fw-bold "><a href="../index.html">Desa Sumberrejo</a></h1>
+                    <h1 class="mb-0 site-logo fw-bold "><a href="index.html">Desa Sumberrejo</a></h1>
                 </div>
                 <div class="col-12 col-md-10 d-none d-xl-block">
                     <nav class="site-navigation position-relative text-right" role="navigation">
@@ -154,7 +162,7 @@
                             <li class="has-children text-black">
                                 <a href="#about-section" class="nav-link fw-bold">Profil Desa</a>
                                 <ul class="dropdown">
-                                    <li><a href="visi.html" class="nav-link">Visi & Misi</a></li>
+                                    <li><a href="html/visi.html" class="nav-link">Visi & Misi</a></li>
                                     <li><a href="sejarah.html" class="nav-link">Sejarah Desa</a></li>
                                     <li><a href="geografis.html" class="nav-link">Geografis Desa</a></li>
                                     <li><a href="demografi.html" class="nav-link">Demografi Desa</a></li>
@@ -171,26 +179,26 @@
                             <li class="has-children">
                                 <a href="#about-section" class="nav-link fw-bold">Informasi Publik</a>
                                 <ul class="dropdown">
-                                    <li><a href="berita.html" class="nav-link">Berita</a></li>
-                                    <li><a href="pengumuman.html" class="nav-link">Pengumuman</a></li>
-                                    <li><a href="agenda.html" class="nav-link">Agenda Kegiatan</a></li>
-                                    <li><a href="galeri.html" class="nav-link">Gallery</a></li>
+                                    <li><a href="html/berita.html" class="nav-link">Berita</a></li>
+                                    <li><a href="html/pengumuman.html" class="nav-link">Pengumuman</a></li>
+                                    <li><a href="html/agenda.html" class="nav-link">Agenda Kegiatan</a></li>
+                                    <li><a href="html/galeri.html" class="nav-link">Gallery</a></li>
                                 </ul>
                             </li>
                             <li class="has-children">
                                 <a href="#about-section" class="nav-link fw-bold">Layanan</a>
                                 <ul class="dropdown">
-                                    <li><a href="#team-section" class="nav-link">Layanan Pembuatan Surat</a></li>
-                                    <li><a href="#pricing-section" class="nav-link">Layanan Pembuatan KK</a></li>
+                                    <li><a href="surat.html" class="nav-link">Layanan Pembuatan Surat</a></li>
+                                    <li><a href="kk.html" class="nav-link">Layanan Pembuatan KK</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#contact" class="nav-link fw-bold">Kontak</a></li>
+                            <li><a href="contact.html" class="nav-link fw-bold">Kontak</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
-                    <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
-                </div>
+                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
+                        href="#" class="site-menu-toggle js-menu-toggle float-right"><span
+                            class="icon-menu h3"></span></a></div>
             </div>
         </div>
     </header>
@@ -248,30 +256,27 @@
         <div class="container">
             <div class="d-lg-flex justify-content-between py-3 py-lg-2">
                 <div class="small mb-2 mb-lg-0">
-                    <p class="text-black mb-0 me-5">© <span id="year"></span> Desa Sumberrejo. All rights reserved.</p>
+                    <p class="text-black mb-0 me-5">© <span id="year"></span> DesaSumberrejo. All rights reserved.</p>
                 </div>
                 <div class="d-flex small align-items-end justify-content-between">
                     <div>
-                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Privacy Policy</a>
-                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Terms</a>
-                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="#">Cookies</a>
-                        <a class="d-block d-lg-inline text-black ms-lg-3" href="#">Sitemap</a>
+                        <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="">Terms</a> <a class="d-block d-lg-inline text-black ms-lg-3 mb-2 mb-lg-0" href="">Cookies</a> <a class="d-block d-lg-inline text-black ms-lg-3" href="">Sitemap</a>
                     </div>
                     <div class="d-none d-lg-block ms-3">
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-youtube"></i></a> 
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="me-2 text-black" href=""><i class="fa-brands fa-youtube"></i></a> 
+                        <a class="me-2 text-black" href=""><i class="fa-brands fa-whatsapp"></i></i></a>
+                        <a class="me-2" href=""></a>
                     </div>
                     <div class="d-lg-none">
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-youtube"></i></a> 
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a class="me-2 text-black" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="me-2" href=""><i class="fa-brands fa-youtube"></i></a> 
+                        <a class="me-2" href=""><i class="fi fi-brands-whatsapp"></i></a>
+                        <a class="me-2" href=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
+    
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
